@@ -1,0 +1,139 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sidebar esquerda */
+.sidebar {
+    background: #070707;
+    color: white;
+    padding: 30px 20px;
+    width: 30%;
+}
+
+.sidebar h2,
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: -2px 3px 5px #000000;
+}
+
+/* Conteúdo principal */
+.main-content {
+    padding: 30px;
+    width: 70%;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+h1 + p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.main-content h2,
+.main-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    display: inline-block;
+}
+
+.main-content .timeline-item {
+    margin-bottom: 20px;
+}
+
+.main-content .timeline-item h3 {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.main-content .timeline-item p {
+    font-size: 14px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.references {
+    margin-top: 30px;
+}
+
+.references .reference-item {
+    margin-bottom: 20px;
+}
+
+.references .reference-item p {
+    font-size: 14px;
+    color: #34495e;
+}
+
+.references .reference-item p strong {
+    color: #2c3e50;
+}
+
+/* Skills */
+.sidebar .skills ul li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Resposta para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+    .main-content {
+        padding: 20px;
+    }
+}
