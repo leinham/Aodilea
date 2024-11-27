@@ -86,6 +86,24 @@
                 <h3>Referências disponíveis mediante solicitação.</h3>
                 </div>
             </section>
+
+            <section>
+                 <button id="showAlert" style="margin: 20px; padding: 10px;">Clique aqui para mais informações</button>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const button = document.getElementById("showAlert");
+        
+                    if (button) {
+                        button.addEventListener("click", function() {
+                            alert("Obrigado por visitar meu currículo!");
+                        });
+                    } else {
+                        console.error("Botão não encontrado no DOM.");
+                    }
+                });
+            </script>
+            </section>
         </main>
     </div>
 </body>
